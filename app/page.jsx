@@ -14,7 +14,7 @@ export default function Home() {
   };
 
   return (
-    <main>
+    <main className="mt-0" >
       <section className="container">
         <h3>{people.length} birthdays today</h3>
         <List people={people} />

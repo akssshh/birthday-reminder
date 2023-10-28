@@ -268,7 +268,7 @@ body {
 } */
 
 main {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +277,7 @@ main {
   /* border: 2px solid red; */
   width: 90vw;
   max-width: var(--fixed-width);
-  margin: 5rem 0;
+  margin: 2rem 0;
   background: var(--white);
   border-radius: var(--borderRadius);
   padding: 1.5rem 2rem;
@@ -305,4 +305,27 @@ main {
 }
 .person p {
   color: var(--grey-500);
+}
+
+/* nav styles */
+nav {
+  @apply
+    pb-4
+    border-b-2 border-gray-200
+    flex items-center gap-5 
+    my-10 mx-auto 
+    max-w-5xl;
+}
+nav a, nav span {
+  @apply text-gray-500;
+}
+nav a:hover {
+  @apply text-black;
+}
+main nav {
+  @apply border-0;
+}
+
+h1, h2 {
+  @apply font-bold text-violet-500 text-lg;
 }
