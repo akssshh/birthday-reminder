@@ -14,7 +14,7 @@ export default function Navbar() {
       />
         <div className=" flex gap-x-6" >
             <Link href="/" >Dashboard</Link>
-            <Link href="/tickets" >Birthdays</Link>
+            <Link href="/birthdays" >Birthdays</Link>
         </div>
     </nav>
   )

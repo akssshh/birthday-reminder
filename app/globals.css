@@ -26,6 +26,11 @@ html {
   --primary-800: #86198f;
   --primary-900: #701a75;
 
+  /* blue */
+  --blue-50: #01C3F3;
+  --blue-100: #00AEE3;
+  --blue-300: #5046E5;
+
   /* grey */
   --grey-50: #f8fafc;
   --grey-100: #f1f5f9;
@@ -91,7 +96,7 @@ h5 {
 }
 
 h1 {
-  font-size: 3.052rem;
+  font-size: 4.052rem;
 }
 
 h2 {
@@ -260,7 +265,7 @@ ul {
 /* optional overwrite */
 
 body {
-  background: var(--primary-100);
+  background: var(--blue-50);
 }
 
 /* * {
@@ -327,5 +332,5 @@ main nav {
 }
 
 h1, h2 {
-  @apply font-bold text-violet-500 text-lg;
+  @apply font-bold text-primary text-lg;
 }
