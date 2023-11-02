@@ -322,10 +322,10 @@ nav {
     max-w-5xl;
 }
 nav a, nav span {
-  @apply text-gray-500;
+  @apply text-white;
 }
 nav a:hover {
-  @apply text-black;
+  @apply text-primary;
 }
 main nav {
   @apply border-0;
