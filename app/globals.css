@@ -30,6 +30,7 @@ html {
   --blue-50: #01C3F3;
   --blue-100: #00AEE3;
   --blue-300: #5046E5;
+  --blue-250: #00B7F6;
 
   /* grey */
   --grey-50: #f8fafc;
@@ -325,6 +326,9 @@ nav a, nav span {
   @apply text-white;
 }
 nav a:hover {
+  @apply text-primary;
+}
+a:hover {
   @apply text-primary;
 }
 main nav {

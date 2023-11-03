@@ -4,7 +4,7 @@ import BirthdayList from "./BirthdayList";
 const Tickets = () => {
   return (
     <main>
-        <section className="container" >
+        <section className="container">
             <BirthdayList />
         </section>
     </main>
