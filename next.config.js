@@ -3,6 +3,7 @@ const nextConfig = {}
 
 module.exports = {
     images: {
-      domains: ['www.course-api.com'], // Add the domain for your images here
+      domains: ['www.course-api.com','pbs.twimg.com'], 
+      
     },
   }
