@@ -1,6 +1,10 @@
 import React from "react";
 import BirthdayList from "./BirthdayList";
 
+export const metadata = {
+  title: "Birthday Reminder | Birthdays",
+};
+
 const Tickets = () => {
   return (
     <main>
