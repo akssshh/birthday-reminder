@@ -4,7 +4,7 @@ import { useState } from "react";
 // import data from "./data";
 // import List from "./List";
 import Image from "next/image";
-import BirthdayImg from '../public/birthday-01.jpeg'
+import BirthdayImg from '../../public/birthday-01.jpeg'
 
 export default function Home() {
   

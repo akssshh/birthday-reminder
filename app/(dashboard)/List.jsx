@@ -1,4 +1,3 @@
-
 import Person from "./Person";
 
 const List = ({ people }) => {
