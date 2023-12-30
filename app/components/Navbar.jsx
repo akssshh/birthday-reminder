@@ -1,12 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "./bday-reminder.png";
+import LogoutButton from "./LogoutButton";
 
 export default function Navbar({ user }) {
-  
   return (
     <nav className="flex justify-between">
-      {console.log('hello')}
+      {console.log("hello")}
       <Link href="/">
         <Image
           src={Logo}
@@ -21,8 +21,11 @@ export default function Navbar({ user }) {
         <Link href="/">Dashboard</Link>
         <Link href="/birthdays">Birthdays</Link>
       </div>
-      {user && <span>Hello, {user.email}</span>}
-      
+      <div className="flex gap-x-6" >
+        {user && <span>Hello, {user.email}</span>}
+
+        <LogoutButton />
+      </div>
     </nav>
   );
 }
