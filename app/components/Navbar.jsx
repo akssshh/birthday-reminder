@@ -2,9 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "./bday-reminder.png";
 
-export default function Navbar() {
+export default function Navbar({ user }) {
+  
   return (
     <nav className="flex justify-between">
+      {console.log('hello')}
       <Link href="/">
         <Image
           src={Logo}
@@ -19,6 +21,8 @@ export default function Navbar() {
         <Link href="/">Dashboard</Link>
         <Link href="/birthdays">Birthdays</Link>
       </div>
+      {user && <span>Hello, {user.email}</span>}
+      
     </nav>
   );
 }
