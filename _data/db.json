@@ -3,36 +3,36 @@
     {
       "id": 1,
       "name": "Bertie Yates",
-      "age": 29,
-      "image": "https://www.course-api.com/images/people/person-1.jpeg"
+      "age": 28,
+      "birthdate": "21-10-1997"
     },
     {
       "id": 2,
       "name": "Hester Hogan",
-      "age": 32,
-      "image": "https://www.course-api.com/images/people/person-2.jpeg"
+      "age": 30,
+      "birthdate": "21-10-1997"
     },
     {
       "id": 3,
       "name": "Larry Little",
       "age": 36,
-      "image": "https://www.course-api.com/images/people/person-3.jpeg"
+      "birthdate": "21-10-1997"
     },
     {
       "id": 4,
       "name": "Sean Walsh",
       "age": 34,
-      "image": "https://www.course-api.com/images/people/person-4.jpeg"
+      "birthdate": "21-10-1997"
     },
     {
       "id": 5,
       "name": "Lola Gardner",
       "age": 29,
-      "image": "https://www.course-api.com/images/people/person-5.jpeg"
+      "birthdate": "21-10-1997"
     },
     {
-      "name": "biswa phukan",
-      "age": "21",
+      "name": "Akash Gogoi",
+      "age": "22",
       "image": "https://pbs.twimg.com/profile_images/1576063847261052928/Fs1Ve_b4_400x400.jpg",
       "id": 6
     }

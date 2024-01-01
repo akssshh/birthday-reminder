@@ -12,18 +12,26 @@ const CreateForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const newBirthday = {
+    const birthday = {
       name,
-      age,
-      image:
-        "https://pbs.twimg.com/profile_images/1576063847261052928/Fs1Ve_b4_400x400.jpg",
+      age
     };
 
-    const res = await fetch("http://localhost:4000/birthdays", {
+    const res = await fetch("http://localhost:3000/api/birthdays", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newBirthday),
+      body: JSON.stringify(birthday),
     });
+
+    const newData = await res.json()
+
+    if (newData.error) {
+      console.log(error.message)
+    }
+    if (newData.data) {
+      router.refresh()
+      router.push('/tickets')
+    }
   };
 
   return (

@@ -2,13 +2,13 @@ const peopleData = [
     {
       id: 1,
       name: 'Bertie Yates',
-      age: 29,
+      age: 28,
       image: 'https://www.course-api.com/images/people/person-1.jpeg',
     },
     {
       id: 2,
       name: 'Hester Hogan',
-      age: 32,
+      age: 30,
       image: 'https://www.course-api.com/images/people/person-2.jpeg',
     },
     {
