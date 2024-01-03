@@ -1,31 +1,20 @@
 {
   "birthdays": [
+    
     {
       "id": 1,
-      "name": "Bertie Yates",
-      "age": 28,
-      "birthdate": "21-10-1997"
-    },
-    {
-      "id": 2,
-      "name": "Hester Hogan",
-      "age": 30,
-      "birthdate": "21-10-1997"
-    },
-    {
-      "id": 3,
       "name": "Larry Little",
       "age": 36,
       "birthdate": "21-10-1997"
     },
     {
-      "id": 4,
+      "id": 2,
       "name": "Sean Walsh",
       "age": 34,
       "birthdate": "21-10-1997"
     },
     {
-      "id": 5,
+      "id": 3,
       "name": "Lola Gardner",
       "age": 29,
       "birthdate": "21-10-1997"
@@ -34,7 +23,7 @@
       "name": "Akash Gogoi",
       "age": "22",
       "image": "https://pbs.twimg.com/profile_images/1576063847261052928/Fs1Ve_b4_400x400.jpg",
-      "id": 6
+      "id": 4
     }
   ]
 }

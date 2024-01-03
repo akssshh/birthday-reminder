@@ -2,8 +2,6 @@ import { NextResponse } from "next/server"
 import { cookies } from 'next/headers'
 import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs"
 
-export const dynamic = 'force-dynamic'
-
 export async function POST(request) {
   const birthdate = await request.json()
 
@@ -17,7 +15,7 @@ export async function POST(request) {
   const { data, error } = await supabase.from('birthdates')
     .insert({
       ...birthdate,
-      user_email: session.user.email
+      user_email: session.user.email4
     })
     .select()
     .single()

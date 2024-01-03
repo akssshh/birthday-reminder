@@ -14,7 +14,8 @@ const CreateForm = () => {
 
     const birthday = {
       name,
-      age
+      age,
+      user_email: 'mario@netninja.dev'
     };
 
     const res = await fetch("http://localhost:3000/api/birthdays", {
@@ -23,12 +24,12 @@ const CreateForm = () => {
       body: JSON.stringify(birthday),
     });
 
-    const newData = await res.json()
+    const json = await res.json()
 
-    if (newData.error) {
+    if (json.error) {
       console.log(error.message)
     }
-    if (newData.data) {
+    if (json.data) {
       router.refresh()
       router.push('/tickets')
     }
