@@ -3,16 +3,18 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const CreateForm = () => {
+export default function CreateForm() {
   const router = useRouter();
 
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true)
 
-    const birthday = {
+    const newBirthday = {
       name,
       age,
       user_email: 'mario@netninja.dev'
@@ -21,7 +23,7 @@ const CreateForm = () => {
     const res = await fetch("http://localhost:3000/api/birthdays", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(birthday),
+      body: JSON.stringify(newBirthday),
     });
 
     const json = await res.json()
@@ -31,7 +33,7 @@ const CreateForm = () => {
     }
     if (json.data) {
       router.refresh()
-      router.push('/tickets')
+      router.push('/birthdates')
     }
   };
 
@@ -56,9 +58,14 @@ const CreateForm = () => {
         />
       </label>
 
-      <button className="btn-primary">Submit</button>
+      <button 
+        className="btn-primary"
+        disabled={isLoading}
+      >
+        {isLoading && <span>Submitting...</span>}
+        {!isLoading && <span>Submit</span>}
+      </button>
     </form>
   );
 };
 
-export default CreateForm;

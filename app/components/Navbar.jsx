@@ -19,7 +19,7 @@ export default function Navbar({ user }) {
 
       <div className=" flex gap-x-6">
         <Link href="/">Dashboard</Link>
-        <Link href="/birthdays">Birthdays</Link>
+        <Link href="/birthdates">Birthdates</Link>
       </div>
       <div className="flex gap-x-6" >
         {user && <span>Hello, {user.email}</span>}

@@ -1,14 +1,13 @@
-import React from "react";
-import BirthdayList from "./BirthdayList";
 import { Suspense } from "react";
 import Loading from "../loading";
 import Link from "next/link";
+import BirthdayList from "./BirthdayList";
 
 export const metadata = {
   title: "Birthday Reminder | Birthdays",
 };
 
-const Tickets = () => {
+export default function Birthdates() {
   return (
     <main className="flex flex-col">
       <div className="flex items-center mt-4 justify-around w-full ">
@@ -16,7 +15,7 @@ const Tickets = () => {
           <h2>Birthdays</h2>
         </div>
         <div>
-          <Link href="/birthdays/create" className="">
+          <Link href="/birthdates/create" className="">
             <button className="btn-primary">New Birthday</button>
           </Link>
         </div>
@@ -30,4 +29,3 @@ const Tickets = () => {
   );
 };
 
-export default Tickets;
