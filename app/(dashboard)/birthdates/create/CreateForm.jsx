@@ -8,6 +8,7 @@ export default function CreateForm() {
 
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
+  const [date, setDate] = useState();
   const [isLoading, setIsLoading] = useState(false)
 
   const handleSubmit = async (e) => {
@@ -17,6 +18,7 @@ export default function CreateForm() {
     const newBirthday = {
       name,
       age,
+      date,
       user_email: 'mario@netninja.dev'
     };
 
@@ -56,6 +58,15 @@ export default function CreateForm() {
           value={age}
           onChange={(e) => setAge(e.target.value)}
         />
+      </label>
+      <label>
+        <span>Date:</span>
+        <input
+          type="date"
+          id='date'
+          value={date}
+          onChange={(e) => setDate(e.target.value)} 
+         />
       </label>
 
       <button 

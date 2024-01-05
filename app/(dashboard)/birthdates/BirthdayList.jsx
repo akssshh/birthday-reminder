@@ -24,6 +24,7 @@ export default async function BirthdayList() {
           <Link href={`/birthday/${birthday.id}`} >
             <h2>{birthday.name}</h2>
             <p>{birthday.age} years</p>
+            <p className="mt-2" >{birthday.date}</p>
           </Link>
         </div>
       ))}
