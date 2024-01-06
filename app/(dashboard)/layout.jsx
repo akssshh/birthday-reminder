@@ -14,11 +14,11 @@ export default async function DashboardLayout({ children }) {
   }
 
   return (
-    <>
+    <div >
       <Navbar user={data.session.user} />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 

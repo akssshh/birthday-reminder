@@ -5,7 +5,8 @@ import LogoutButton from "./LogoutButton";
 
 export default function Navbar({ user }) {
   return (
-    <nav className="flex justify-between">
+    <div className="bg-blue py-[1px]" >
+      <nav className="flex justify-between ">
       {console.log("hello")}
       <Link href="/">
         <Image
@@ -27,5 +28,6 @@ export default function Navbar({ user }) {
         <LogoutButton />
       </div>
     </nav>
+    </div>
   );
 }
