@@ -7,7 +7,6 @@ export default function Navbar({ user }) {
   return (
     <div className="bg-blue py-[1px]" >
       <nav className="flex justify-between ">
-      {console.log("hello")}
       <Link href="/">
         <Image
           src={Logo}

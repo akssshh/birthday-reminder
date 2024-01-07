@@ -1,37 +1,39 @@
 "use client";
+import Image from "next/image";
 
-export default function Home() {
+const Home = () => {
   return (
-    <section>
-      <div className="mx-auto max-w-screen-xl px-4 sm:py-6  sm:px-6  lg:px-8 ">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="relative  overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
-            <img
-              alt="Party"
-              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/2815871/original/Happy_Birthday/sing-happy-birthday-for-you.jpg"
-            />
-          </div>
-
-          <div className="lg:py-24">
-            <h1 className="text-3xl font-bold sm:text-5xl">
-              Welcome to Birthday Reminder
-            </h1>
-
-            <p className="mt-4 text-white sm:text-2xl ">
-              Never forget a birthday again. Stay connected, celebrate life, and
-              make every day special.
-            </p>
-
+    <section className=" text-gray-800 2xl:pt-16 ">
+      <div className="container flex flex-col justify-center p-4 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between 2xl:w-[1300px] ">
+        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-xl lg:text-left">
+          <h1 className="text-5xl font-bold sm:text-6xl text-indigo-600">
+            Welcome To Birthday Reminder
+          </h1>
+          <p className="mt-6 mb-8 text-lg sm:mb-12">
+            Never forget a birthday again. Stay connected, celebrate life, and
+            make every day special.
+          </p>
+          <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
             <a
+              rel="noopener noreferrer"
               href="#"
-              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="px-8 py-3 text-lg font-semibold rounded bg-indigo-600 text-gray-50"
             >
               Get Started Today
             </a>
           </div>
         </div>
+        <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <img
+            src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/2815871/original/Happy_Birthday/sing-happy-birthday-for-you.jpg"
+            alt="ene"
+            className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+            
+          />
+        </div>
       </div>
     </section>
   );
-}
+};
 
+export default Home;
