@@ -4,20 +4,15 @@
 
 .main {
     min-height: 100vh;
-    /* display: flex; */
-  /* flex-direction: column; */
 }
-
 section {
     min-height: 74vh;
-    /* border: 2px solid red; */
     
 }
-
 footer {
     bottom: 0;
     width: 100%;
   }
 
-
- 
+  
+  

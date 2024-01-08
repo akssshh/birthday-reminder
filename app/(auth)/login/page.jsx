@@ -4,7 +4,7 @@ import { createClientComponentClient } from "@supabase/auth-helpers-nextjs";
 import AuthForm from "../AuthForm";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Footer from "../../components/Footer";
+import Footer2 from "../../components/Footer2";
 
 export default function Login() {
   const [error, setError] = useState("");
@@ -33,7 +33,7 @@ export default function Login() {
         <h2 className="text-center mb-4">Log in</h2>
         <AuthForm handleSubmit={handleSubmit} />
       </div>
-      <Footer />
+      <Footer2 />
       {error && <div className="error">{error}</div>}
     </main>
   );
