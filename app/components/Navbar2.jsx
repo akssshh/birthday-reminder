@@ -33,13 +33,7 @@ const Navbar = ({ user }) => {
             </a>
           </li>
           <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
-              className="flex items-center px-4 -mb-1 border-b-2 border-transparent"
-            >
-              Birthdates
-            </a>
+            <Link className="flex items-center px-4 -mb-1 border-b-2 border-transparent" href="/birthdates" >Birthdates</Link>
           </li>
         </ul>
         <div className="items-center flex-shrink-0 hidden lg:flex text-white">
